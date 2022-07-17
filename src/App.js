@@ -21,7 +21,7 @@ function App() {
   const onAddToCard = (obj) => {
     setCardItems((prev) => [...prev, obj]);
   }
-  
+  console.log(cardItems);
   return (
     <div className="wrapper clear">
       {cardOpened && <Drawer items={cardItems} onClose={() => {setCardOpended(false)}} />}
